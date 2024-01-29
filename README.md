@@ -1,10 +1,10 @@
-# vue-hammer
+# two-faces-vue2-hammer
 
 Hammer.js wrapper for Vue to support some operation in the mobile
 
 This is a directive wrapper for Hammer.js 2.x. And this repo'inspiration is from v-touch.
 
-If you want to find a same wrapper for Angular4+, you can have a look at [ngx-hammer](https://github.com/bsdfzzzy/ngx-hammer)
+If you want to find a same wrapper for Angular4+, you can have a look at [ngx-hammer](https://github.com/Two-Faces/ngx-hammer)
 
 ## Install
 
@@ -12,14 +12,14 @@ If you want to find a same wrapper for Angular4+, you can have a look at [ngx-ha
 
 ### npm
 
-Available through npm as `vue2-hammer`.
+Available through npm as `two-faces-vue2-hammer`.
 
 ```bash
-npm install vue2-hammer
+npm install two-faces-vue2-hammer
 ```
 
 ```Javascript
-import { VueHammer } from 'vue2-hammer'
+import { VueHammer } from 'two-faces-vue2-hammer'
 Vue.use(VueHammer)
 ```
 

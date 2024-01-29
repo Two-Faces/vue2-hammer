@@ -27,17 +27,17 @@ export const VueHammer = {
         el.__hammerConfig[event].direction = el.__hammerConfig[event].direction || []
         if (Object.keys(direction).length) {
           Object.keys(direction)
-            .filter(keyName => binding.modifiers[keyName])
-            .forEach(keyName => {
-              const elDirectionArray = el.__hammerConfig[event].direction
-              if (elDirectionArray.indexOf(keyName) === -1) {
-                elDirectionArray.push(String(keyName))
-              }
-            })
+              .filter(keyName => binding.modifiers[keyName])
+              .forEach(keyName => {
+                const elDirectionArray = el.__hammerConfig[event].direction
+                if (elDirectionArray.indexOf(keyName) === -1) {
+                  elDirectionArray.push(String(keyName))
+                }
+              })
         }
 
         let recognizerType,
-          recognizer
+            recognizer
 
         if (this.customEvents[event]) {
           // custom event
@@ -81,7 +81,7 @@ export const VueHammer = {
           }
           // apply local options
           const localOptions = el.hammerOptions &&
-          el.hammerOptions[recognizerType]
+              el.hammerOptions[recognizerType]
           if (localOptions) {
             this.guardDirections(localOptions)
             recognizer.set(localOptions)
@@ -98,8 +98,8 @@ export const VueHammer = {
         if (typeof binding.value !== 'function') {
           mc.handler = null
           console.warn(
-            '[vue-hammer] invalid handler function for v-hammer: ' +
-            binding.arg
+              '[vue-hammer] invalid handler function for v-hammer: ' +
+              binding.arg
           )
         } else {
           mc.on(eventWithDir, (mc.handler = binding.value))
@@ -116,8 +116,8 @@ export const VueHammer = {
         if (typeof binding.value !== 'function') {
           mc.handler = null
           console.warn(
-            '[vue-hammer] invalid handler function for v-hammer: ' +
-            binding.arg
+              '[vue-hammer] invalid handler function for v-hammer: ' +
+              binding.arg
           )
         } else {
           mc.on(eventWithDir, (mc.handler = binding.value))
